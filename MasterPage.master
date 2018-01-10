@@ -1,0 +1,126 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="Admincp_Classes_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="../css/MainClass.css" rel="stylesheet" type="text/css" />
+
+<link href="../css/admin.css" rel="stylesheet" type="text/css" />
+<link href="../css/Content.css" rel="stylesheet" type="text/css" />
+
+<link href="../css/home_main.css" rel="stylesheet" type="text/css" />
+ <script src='<%=ResolveUrl("../Jscript/HomeScript.js")%>'type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+    function btnclass(id) {
+        document.getElementById(id).className = "btn_bg";
+    }
+    function btnclasshover(id) {
+        document.getElementById(id).className = "btn_bg_hover";
+    }
+    function changeclass(id) {
+        document.getElementById(id).className = "btn_bg_hover"
+    }
+    //====================
+    function changeclass2(id) {
+        document.getElementById(id).className = "btn_bg"
+    }
+    </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+  
+   
+       
+  
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div align="center">
+        <table cellpadding="2" cellspacing="2" width="900" bgcolor="White">
+            <tr>
+                <td  >
+                  <img src="../../images/header.jpg" />
+                     </td>
+            </tr>
+            <tr>
+                <td>
+                 
+                <div id="nav"> 
+<ul> 
+
+
+<li><a href="#">  العمليـات   </a> 
+        <ul> 
+
+       <li><asp:HyperLink ID="HyperLink10" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Attend_FeedBack/Attend_FeedBack.aspx">التغذية الراجعة</asp:HyperLink></li> 
+       <li><asp:HyperLink ID="HyperLink18" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Event_Type/Event_Type.aspx">انواع الاحداث</asp:HyperLink></li> 
+        <li><asp:HyperLink ID="HyperLink4" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Event_Visitor/Event_Visitor.aspx">زوار الاحداث </asp:HyperLink></li> 
+       
+          <li><asp:HyperLink ID="HyperLink22" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Events/Events.aspx">الاحداث</asp:HyperLink></li> 
+       <li><asp:HyperLink ID="HyperLink23" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Events_workshops/Events_workshops.aspx">ورش العمل للاحداث </asp:HyperLink></li> 
+           <li><asp:HyperLink ID="HyperLink24" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Holders/Holders.aspx">منظموا الاحداث </asp:HyperLink></li> 
+       
+        <li><asp:HyperLink ID="HyperLink3" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Sponsors/Sponsors.aspx"> الرعاة </asp:HyperLink></li> 
+       
+               </ul> 
+</li> 
+
+
+
+
+
+
+
+<%--
+<li><a href="#" class="Hlink">  إعدادات   </a> 
+        <ul> 
+          <li><asp:HyperLink ID="HyperLink6" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Departments/Departments.aspx">المجمعات الدراسية  </asp:HyperLink></li> 
+           <li><asp:HyperLink ID="HyperLink8" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Stages/Stages.aspx">المراحل </asp:HyperLink></li> 
+             <li><asp:HyperLink ID="HyperLink9" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Classes/Classes.aspx">الصفوف  </asp:HyperLink></li> 
+           <li><asp:HyperLink ID="HyperLink15" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Sections/Sections.aspx">الشعب الدراسية  </asp:HyperLink></li> 
+             <li><asp:HyperLink ID="HyperLink16" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Courses/Courses.aspx">المواد الدراسية  </asp:HyperLink></li> 
+          <li><asp:HyperLink ID="HyperLink1" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Courses_Chapters/Courses_Chapters.aspx">فصول المواد   </asp:HyperLink></li> 
+       
+           <li><asp:HyperLink ID="HyperLink25" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Quizes/Quizes.aspx">اختبارات  </asp:HyperLink></li> 
+       
+       
+       
+        </ul> 
+</li> --%>
+
+<%-- 
+<li><a href="#">  تصدير البيانات  </a> 
+        <ul> 
+          <li><asp:HyperLink ID="HyperLink111" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Students/ExportToExcel.aspx">تصدير بيانات الطلاب </asp:HyperLink></li> 
+           <li><asp:HyperLink ID="HyperLink112" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Results/ResultsToExcel.aspx">تصدير بيانات النتائج   </asp:HyperLink></li> 
+         <li><asp:HyperLink ID="HyperLink74" class="Hlink"  runat="server" NavigateUrl="~/Admincp/Results/ResultsStaticsToExcel.aspx">تصدير احصائيات النتائج   </asp:HyperLink></li> 
+        
+     
+        </ul> 
+</li> --%>
+  
+
+<li><a href="#" class="Hlink" >حول النظام</a></li> 
+<li><a href="#" class="Hlink" > المساعدة</a></li> 
+<li><a href="logout.aspx" class="Hlink" > تسجيل الخروج</a></li> 
+    <li></li>
+
+</ul> 
+</div></td>
+            </tr>
+            <tr>
+                <td>
+                 
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                 
+                     
+                 
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
